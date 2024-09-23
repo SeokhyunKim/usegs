@@ -82,7 +82,7 @@ setGS("CURRENT_FOLDER", { items: { anotherItem: true } });
 
 - Description: Initializes the global state with the provided object. Each key-value pair sets the initial state for a specific key.
 - Parameters:
-  initialState (Object) - An object containing initial state values.
+  - initialState (Object) - An object containing initial state values.
 - Example:
 
 ```javascript
@@ -96,8 +96,8 @@ initGS({
 
 - Description: React hook to use and update a global state within a component.
 - Parameters:
-  key (string) - The key of the global state.
-  initialValue (any) - Optional initial value if the state key is not already registered.
+  - key (string) - The key of the global state.
+  - initialValue (any) - Optional initial value if the state key is not already registered.
 - Returns: [stateValue, setStateFunction]
 - Example:
 
@@ -111,7 +111,7 @@ const [currentFolder, setCurrentFolder] = useGS("CURRENT_FOLDER", {
 
 - Description: Retrieves the value of a global state.
 - Parameters:
-  key (string) - The key of the global state to retrieve.
+  - key (string) - The key of the global state to retrieve.
 - Returns: The current value of the specified global state, or null if the key is not found.
 - Example:
 
@@ -123,8 +123,8 @@ const folderState = getGS("CURRENT_FOLDER");
 
 - Description: Updates the value of a global state and notifies all registered listeners.
 - Parameters:
-  key (string) - The key of the global state to update.
-  newValue (any) - The new value to set for the state.
+  - key (string) - The key of the global state to update.
+  - newValue (any) - The new value to set for the state.
 - Example:
 
 ```javascript
@@ -133,4 +133,4 @@ setGS("CURRENT_FOLDER", { items: { updatedItem: true } });
 
 ## License
 
-This project is licensed under the MIT License - see the **LICENSE** file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/SeokhyunKim/usegs/blob/main/LICENSE) file for details.
