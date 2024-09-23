@@ -1,6 +1,6 @@
 {
   "name": "usegs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple global state management library for React using useGS.",
   "main": "src/index.js",
   "repository": {
